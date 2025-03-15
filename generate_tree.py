@@ -19,7 +19,11 @@ def get_description(lesson_path):
 
 def generate_markdown():
     """Generates a Markdown tree with clickable lesson links and descriptions."""
-    markdown_lines = [f"**[/python-course/]({GITHUB_URL})**  "]
+    markdown_lines = [
+        "# \ud83d\udcc2 Project Directory Structure\n",
+        "This page documents the structure of the project and the key concepts covered in each lesson.\n",
+        f"**[/python-course/]({GITHUB_URL})**  "
+    ]
 
     # Get sorted list of lesson folders that match the pattern
     lesson_folders = sorted(
