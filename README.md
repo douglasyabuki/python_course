@@ -1,6 +1,6 @@
 # Python 2023 Course Repository
 
-This repository contains the practical lessons and exercises completed as part of the [Phyton 2023 course](https://www.udemy.com/course/python-3-do-zero-ao-avancado/) taught by [Luiz Otávio](https://github.com/luizomf).
+This repository contains the practical lessons and exercises completed as part of the [Python 2023 course](https://www.udemy.com/course/python-3-do-zero-ao-avancado/) taught by [Luiz Otávio](https://github.com/luizomf).
 
 ## About the Course
 
@@ -23,6 +23,12 @@ All the lessons and exercises are based on the teachings of **[Luiz Otávio](htt
 
 Each folder corresponds to a specific lesson, containing code and explanations for the exercises covered.
 
+### Basic Python Module
+Lessons between **lesson001** and **lesson064** cover fundamental Python concepts.
+
+### Intermediate Python Module
+To be included
+
 ## Usage
 
 Feel free to explore, modify, and use these lessons for learning purposes. However, if you share or distribute them, please give proper credit to **[Luiz Otávio](https://github.com/luizomf)** and the original course materials.
@@ -34,3 +40,4 @@ This repository is for educational purposes only and does not claim ownership of
 ---
 
 **Happy coding!** 🚀
+
