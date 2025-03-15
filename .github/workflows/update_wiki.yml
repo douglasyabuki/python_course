@@ -27,11 +27,13 @@ jobs:
 
       - name: Run Script to Generate Directory Structure
         run: |
-          python generate_tree.py  # Now using the correct path
+          python generate_tree.py  # Runs the script
 
-      - name: Clone Wiki Repository
+      - name: Clone Wiki Repository with Authentication
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
-          git clone https://github.com/${{ github.repository }}.wiki.git wiki
+          git clone https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.wiki.git wiki
 
       - name: Copy Updated Directory Structure to Wiki
         run: |
