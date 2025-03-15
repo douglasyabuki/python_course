@@ -13,8 +13,8 @@ def execute(function, *args):
 
 
 print(
-    execute(greeting, 'Good morning', 'Luiz')
+    execute(greeting, 'Good morning', 'John')
 )
 print(
-    execute(greeting, 'Good night', 'Maria')
+    execute(greeting, 'Good night', 'Joe')
 )
