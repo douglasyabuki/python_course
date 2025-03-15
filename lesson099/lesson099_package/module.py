@@ -3,7 +3,7 @@
 #     'module_sum',
 #     'new_variable',
 # ]
-from lesson99_package.module_b import say_hi
+from lesson099_package.module_b import say_hi
 
 variable = 'Something'
 

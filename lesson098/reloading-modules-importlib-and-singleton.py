@@ -1,11 +1,11 @@
 import importlib
 
-import module98
+import lesson098.module098 as module098
 
-print(module98.variable)
+print(module098.variable)
 
 for i in range(10):
-    importlib.reload(module98)
+    importlib.reload(module098)
     print(i)
 
 print('Fim')
