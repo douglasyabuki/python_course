@@ -13,14 +13,14 @@ def get_description(lesson_path):
     """Reads the description file inside each lesson folder."""
     description_file = os.path.join(lesson_path, "description.txt")
     if os.path.exists(description_file):
-        with open(description_file, "r", encoding="utf-8") as file:
+        with open(description_file, "r", encoding="utf-8", errors="replace") as file:
             return file.readline().strip()  # Get first line as description
     return "No description available"  # Default message if no description file
 
 def generate_markdown():
     """Generates a Markdown tree with clickable lesson links and descriptions."""
     markdown_lines = [
-        "# \ud83d\udcc2 Project Directory Structure\n",
+        "# 📂 Project Directory Structure\n",
         "This page documents the structure of the project and the key concepts covered in each lesson.\n",
         f"**[/python-course/]({GITHUB_URL})**  "
     ]
@@ -42,8 +42,8 @@ def generate_markdown():
 
         markdown_lines.append(f"&nbsp;&nbsp;&nbsp;&nbsp; {prefix} [{lesson}]({lesson_url}) - {description}  ")
 
-    # Write output to file
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as file:
+    # Write output to file (fix encoding issue)
+    with open(OUTPUT_FILE, "w", encoding="utf-8", errors="replace") as file:
         file.write("\n".join(markdown_lines))
 
     print(f"✅ Markdown file '{OUTPUT_FILE}' generated successfully!")
