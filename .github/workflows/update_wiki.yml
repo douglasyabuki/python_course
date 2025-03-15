@@ -13,6 +13,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Show Directory Structure (Debugging)
+        run: |
+          echo "Current Directory:"
+          pwd
+          echo "Files:"
+          ls -R
+
       - name: Set Up Python
         uses: actions/setup-python@v4
         with:
@@ -20,7 +27,7 @@ jobs:
 
       - name: Run Script to Generate Directory Structure
         run: |
-          python python_course/generate_tree.py
+          python generate_tree.py  # Now using the correct path
 
       - name: Clone Wiki Repository
         run: |
@@ -28,7 +35,7 @@ jobs:
 
       - name: Copy Updated Directory Structure to Wiki
         run: |
-          cp python_course/Directory-Structure.md wiki/Directory-Structure.md
+          cp Directory-Structure.md wiki/Directory-Structure.md
 
       - name: Commit and Push Changes to Wiki
         run: |
@@ -36,5 +43,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add Directory-Structure.md
-          git commit -m "📚 Auto-update Wiki: Directory Structure"
+          git commit -m "📚 Auto-update Wiki: Directory Structure" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/${{ github.repository }}.wiki.git
