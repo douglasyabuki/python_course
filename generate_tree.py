@@ -22,7 +22,7 @@ def generate_markdown():
     markdown_lines = [
         "# 📂 Project Directory Structure\n",
         "This page documents the structure of the project and the key concepts covered in each lesson.\n",
-        f"**[/python-course/]({GITHUB_URL})**  "
+        f"**[/python_course/]({GITHUB_URL})**  "
     ]
 
     # Get sorted list of lesson folders that match the pattern
