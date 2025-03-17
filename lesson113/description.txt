@@ -1,0 +1,1 @@
+Reduce - Reduces an iterable into a single value
