@@ -14,7 +14,7 @@ All the lessons and exercises are based on the teachings of **[Luiz Otávio](htt
 ## Repository Structure
 
 ```
-/python-course
+/python_course
   ├── /lesson001
   ├── /lesson002
   ├── /lesson003
