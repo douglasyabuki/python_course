@@ -27,7 +27,7 @@ Each folder corresponds to a specific lesson, containing code and explanations f
 Lessons between **lesson001** and **lesson064** cover fundamental Python concepts.
 
 ### Intermediate Python Module
-To be included
+Lessons between **lesson065** and **lesson119** cover intermediate Python concepts (functions, dictionaries, modules...)
 
 ## Usage
 
