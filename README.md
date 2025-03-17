@@ -23,6 +23,8 @@ All the lessons and exercises are based on the teachings of **[Luiz Otávio](htt
 
 Each folder corresponds to a specific lesson, containing code and explanations for the exercises covered.
 
+[See table of contents](https://github.com/douglasyabuki/python_course/wiki/Directory-Structure)
+
 ### Basic Python Module
 Lessons between **lesson001** and **lesson064** cover fundamental Python concepts.
 
