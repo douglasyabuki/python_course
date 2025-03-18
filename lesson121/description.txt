@@ -1,1 +1,1 @@
-Methods in Class Instances
+Classes - Methods
