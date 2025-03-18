@@ -1,0 +1,1 @@
+Class Scope & Method Scope
