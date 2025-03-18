@@ -1,1 +1,1 @@
-Relationships between Classes - Association, aggregation & composition
+Relationships between Classes - Association
