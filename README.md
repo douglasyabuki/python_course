@@ -31,6 +31,9 @@ Lessons between **lesson001** and **lesson064** cover fundamental Python concept
 ### Intermediate Python Module
 Lessons between **lesson065** and **lesson119** cover intermediate Python concepts (functions, dictionaries, modules...)
 
+### OOP in Pyhon
+Lessons between **lesson120** and **lesson161** cover Object-Oriented Programming in Python (classes)
+
 ## Usage
 
 Feel free to explore, modify, and use these lessons for learning purposes. However, if you share or distribute them, please give proper credit to **[Luiz Otávio](https://github.com/luizomf)** and the original course materials.
