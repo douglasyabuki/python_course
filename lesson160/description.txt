@@ -1,0 +1,1 @@
+Namedtuple - Immutable tuples
