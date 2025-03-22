@@ -7,7 +7,7 @@ class CustomHandler(SimpleHTTPRequestHandler):
             self.path = '/lesson190/index.html'
         return super().do_GET()
 
-def run(server_class=HTTPServer, handler_class=CustomHandler, port=8000):
+def run(server_class=HTTPServer, handler_class=CustomHandler, port=3333):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     print(f'Serving HTTP at http://localhost:{port}/')
