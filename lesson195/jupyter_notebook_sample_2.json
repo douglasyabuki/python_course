@@ -1,0 +1,260 @@
+{
+  "cells": [
+   {
+    "cell_type": "markdown",
+    "id": "658785a0",
+    "metadata": {},
+    "source": [
+     "# This is a Notebook Example\n",
+     "\n",
+     "<p>You can create paragraphs simply by writing text as you prefer.</p>\n",
+     "\n",
+     "For code, add <code>`</code> before and <code>`</code> after for single-line code, and <code>```</code> before and <code>```</code> after for multi-line code. **Single-line example:** `print(123)`.\n",
+     "\n",
+     "**Multi-line example:**\n",
+     "\n",
+     "```python\n",
+     "lista = [\n",
+     "    {'name': 'Luiz', 'surname': 'Miranda'},\n",
+     "    {'name': 'Maria', 'surname': 'Oliveira'},\n",
+     "    {'name': 'Daniel', 'surname': 'Silva'},\n",
+     "    {'name': 'Eduardo', 'surname': 'Moreira'},\n",
+     "    {'name': 'Aline', 'surname': 'Souza'},\n",
+     "]\n",
+     "```\n",
+     "\n",
+     "## Bold and Italic\n",
+     "\n",
+     "* \\** and \\** - **Bold**\n",
+     "* \\* and \\* - *Italic*\n",
+     "\n",
+     "## Blockquote\n",
+     "\n",
+     "Answering your colleagues' questions can help you learn much more.\n",
+     "\n",
+     "> If you can't explain it simply, you don't understand it well enough.\n",
+     "> Albert Einstein\n",
+     "\n",
+     "## Lists\n",
+     "\n",
+     "Here's an ordered list:\n",
+     "\n",
+     "1. Albert Einstein\n",
+     "2. Carl Sagan\n",
+     "3. Guido van Rossum\n",
+     "\n",
+     "Here's an unordered list:\n",
+     "\n",
+     "- Albert Einstein\n",
+     "- Carl Sagan\n",
+     "- Guido van Rossum\n",
+     "\n",
+     "## Images and Links\n",
+     "\n",
+     "Take a look:\n",
+     "\n",
+     "![Python Logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)\n",
+     "\n",
+     "The above image is available at [this link](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg).\n",
+     "\n",
+     "## Table\n",
+     "\n",
+     "Below is an HTML table:\n",
+     "\n",
+     "| Here's a table | With another column |\n",
+     "|---------------|----------------------|\n",
+     "| Here's a row   | Another column       |\n",
+     "| Here's a row   | Another column       |\n",
+     "| Here's a row   | Another column       |\n",
+     "| Column         | Another              |\n",
+     "\n",
+     "## Below is a horizontal line\n",
+     "\n",
+     "a\n",
+     "\n",
+     "---\n",
+     "\n",
+     "b\n",
+     "\n",
+     "## Pure HTML\n",
+     "\n",
+     "<div style=\"padding: 30px; margin: 10px; background: #ccc;\">\n",
+     "<p>Here we have a &lt;p&gt;. You can use any normal HTML tag.</p>\n",
+     "</div>\n"
+    ]
+   },
+   {
+    "cell_type": "markdown",
+    "id": "e1e178fb",
+    "metadata": {},
+    "source": [
+     "# Rendering HTML"
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 1,
+    "id": "e5592d45",
+    "metadata": {
+     "scrolled": true
+    },
+    "outputs": [],
+    "source": [
+     "%%HTML\n",
+     "<span style=\"color: red;\">\n",
+     "<b>THIS IS HTML</b><br />\n",
+     "This text should be red.\n",
+     "</span>"
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 2,
+    "id": "66354e92",
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "%%HTML\n",
+     "<h1>YouTube Video</h1>\n",
+     "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/T17BTNKBeJY\" frameborder=\"0\"></iframe>"
+    ]
+   },
+   {
+    "cell_type": "markdown",
+    "id": "2c7b4831",
+    "metadata": {},
+    "source": [
+     "# Matplotlib Graphs"
+    ]
+   },
+   {
+    "cell_type": "markdown",
+    "id": "30426e36",
+    "metadata": {},
+    "source": [
+     "An example of using the `matplotlib` module.\n",
+     "\n",
+     "First, let's install the module using `!` before the command."
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 3,
+    "id": "f66f6fc0",
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "!pip install matplotlib"
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 4,
+    "id": "5b8cb5d1",
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "import matplotlib.pyplot as plt\n",
+     "\n",
+     "fig, ax = plt.subplots()\n",
+     "\n",
+     "fruits = ['apple', 'blueberry', 'cherry', 'orange']\n",
+     "counts = [40, 100, 30, 55]\n",
+     "bar_labels = ['red', 'blue', '_red', 'orange']\n",
+     "bar_colors = ['tab:red', 'tab:blue', 'tab:red', 'tab:orange']\n",
+     "\n",
+     "ax.bar(fruits, counts, label=bar_labels, color=bar_colors)\n",
+     "\n",
+     "ax.set_ylabel('fruit supply')\n",
+     "ax.set_title('Fruit supply by kind and color')\n",
+     "ax.legend(title='Fruit color')\n",
+     "\n",
+     "plt.show()"
+    ]
+   },
+   {
+    "cell_type": "markdown",
+    "id": "d82bdcca",
+    "metadata": {},
+    "source": [
+     "# Commands on your computer"
+    ]
+   },
+   {
+    "cell_type": "markdown",
+    "id": "325915f3",
+    "metadata": {},
+    "source": [
+     "Use `!` for commands on your computer."
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 5,
+    "id": "507bef38",
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "!ping 127.0.0.1 -c 5"
+    ]
+   },
+   {
+    "cell_type": "markdown",
+    "id": "479854c8",
+    "metadata": {},
+    "source": [
+     "# timeit\n",
+     "\n",
+     "You can see how long it took to perform an operation using `%%timeit`."
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 6,
+    "id": "c9fb4e7b",
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "%%timeit\n",
+     "lista = [x * 2 for x in range(100000)]"
+    ]
+   },
+   {
+    "cell_type": "markdown",
+    "id": "048caf04",
+    "metadata": {},
+    "source": [
+     "# Displaying Pandas DataFrame"
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 7,
+    "id": "dec0fc56",
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "!pip install numpy\n",
+     "!pip install pandas"
+    ]
+   },
+   {
+    "cell_type": "code",
+    "execution_count": 8,
+    "id": "c1ddfca3",
+    "metadata": {},
+    "outputs": [],
+    "source": [
+     "import pandas as pd\n",
+     "import numpy as np\n",
+     "\n",
+     "df = pd.DataFrame(np.random.randn(18,5))\n",
+     "df"
+    ]
+   }
+  ],
+  "metadata": {},
+  "nbformat": 4,
+  "nbformat_minor": 5
+ }
+ 
