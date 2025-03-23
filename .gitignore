@@ -5,3 +5,7 @@ __pycache__/
 *.env
 .DS_Store
 chromedriver
+
+# Python venv
+.venv/
+venv/
