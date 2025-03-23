@@ -42,6 +42,9 @@ Each folder corresponds to a specific lesson, containing code and explanations f
 - 💠 **PySide6**
   Lessons between **lesson201** and **lesson204** cover PySide6 - UI with QT6 in Python - GUI for Desktop
 
+- 🛢️ **SQLite & PyMySQL**
+  Lessons between **lesson205** and **lesson206** cover SQLite & MySQL with Python (PyMySQL) + Docker Compose
+
 ## 🚀 Usage
 
 Feel free to explore, modify, and use these lessons for learning purposes. However, if you share or distribute them, please give proper credit to **[Luiz Otávio](https://github.com/luizomf)** and the original course materials.
@@ -52,5 +55,5 @@ This repository is for educational purposes only and does not claim ownership of
 
 ---
 
-**Happy coding!** ✨�
+**Happy coding!** ✨
 
