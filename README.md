@@ -49,10 +49,16 @@ Each folder corresponds to a specific lesson, containing code and explanations f
   Lessons between **lesson207** and **lesson210** cover Django basics and Projects
 
 - 🧪 **Tests - TDD**  
-  Lesson **lesson211** covers Test-Driven Development with Python
+  **lesson211** covers Test-Driven Development with Python
+
+- 🔠 **Type Annotations**  
+  **lesson212** covers Type Annotations
+
+- 🔀 **Structural Pattern Matching**  
+  **lesson213** covers Structural Pattern Matching
 
 - 🧩 **Design Patterns**  
-  Lesson **lesson214** covers Design Patterns
+  **lesson214** covers Design Patterns
 
 ## 🚀 Usage
 
