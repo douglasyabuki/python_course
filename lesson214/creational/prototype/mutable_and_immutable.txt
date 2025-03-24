@@ -1,0 +1,14 @@
+Mutable (passed by reference)
+  list
+  set
+  dict
+  class (user-defined objects can be mutable)
+  ...
+
+Immutable (copied by value)
+  bool
+  int
+  float
+  tuple
+  str
+  ...
