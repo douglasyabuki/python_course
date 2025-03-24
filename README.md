@@ -39,11 +39,20 @@ Each folder corresponds to a specific lesson, containing code and explanations f
 - 🧰 **Python Modules**  
   Lessons between **lesson162** and **lesson200** cover Python Modules (os, datetime, sys, json, csv, selenium, pillow...)
 
-- 💠 **PySide6**
+- 💠 **PySide6**  
   Lessons between **lesson201** and **lesson204** cover PySide6 - UI with QT6 in Python - GUI for Desktop
 
-- 🛢️ **SQLite & PyMySQL**
+- 🛢️ **SQLite & PyMySQL**  
   Lessons between **lesson205** and **lesson206** cover SQLite & MySQL with Python (PyMySQL) + Docker Compose
+  
+- 🌐 **Django**  
+  Lessons between **lesson207** and **lesson210** cover Django basics and Projects
+
+- 🧪 **Tests - TDD**  
+  Lesson **lesson211** covers Test-Driven Development with Python
+
+- 🧩 **Design Patterns**  
+  Lesson **lesson214** covers Design Patterns
 
 ## 🚀 Usage
 
